@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DONTCLICK</title>
+    <style>
+        body {background-color: #1d0040;}
+        h1 {color: #ffffff;}
+        button {colour: #000000}
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">dont click this</h1>
+    <button style="background-color: #000000; color: #ffffff; border-radius:50%; width: 300px; height: 300px; font-size: 150px; position: absolute; left: 50%; transform: translate(-50%, -50%); margin-top: 175px;" type="button" id="no">
+        NO
+    </button>
+    <script>
+        const buttonConstant = document.getElementById("no");
+
+        buttonConstant.addEventListener("click", function(e) {
+            const password = prompt("Password?");
+            console.log(password)
+            const key = "pwa";
+            const friends = "i sincerely apologize";
+            const purge = "purge";
+            const dwai = "ttyl";
+            if (password === key) {console.log("success") + fetch("https://discord.com/api/webhooks/1518110283824893994/jirJXNLt7LASXelssvriNmWmvnxfmRIxI_kauVHPyFKABdI6uV5BGlhc2E4wsbMDgCv-", {body: JSON.stringify ({content: 'poke',}),
+                headers: {"Content-Type": "application/json",},
+                method: "POST",
+            })
+                .then(function (res){console.log(res);})
+                .catch(function (res){console.log(res);});
+
+
+            }
+            if (password === friends) {fetch("https://discord.com/api/webhooks/1518110311184470049/y3bjfMpS-8d3KTctk6LKkgTYomTQlpd5J5_y1nQai-KK-iKXkzumnffXfQ9N4SisXWjU", {body: JSON.stringify ({content: 'the button has been pressed',}),
+                headers: {"Content-Type": "application/json",},
+                method: "POST",
+            })
+                .then(function (res){console.log(res);})
+                .catch(function (res){console.log(res);});
+
+
+            }
+                        if (password === purge) {fetch("https://discord.com/api/webhooks/1518110304897073242/Qt1YIWD6jZySt9bmCCt0S9fjhVlMgLxkyxncnnFUffisQNHLG7ndBkssQQ4tbP1uMiQk", {body: JSON.stringify ({content: 'PURGE',}),
+                headers: {"Content-Type": "application/json",},
+                method: "POST",
+            })
+                .then(function (res){console.log(res);})
+                .catch(function (res){console.log(res);});
+
+
+            }
+                        if (password === dwai) {fetch("https://discord.com/api/webhooks/1518110298526060665/JMnNak4kRLfyVyoW_Kz4mKlTIP-jdxUSgGwRgluI_NAkPRl5yzPClNTJXcga1O-qN2R6", {body: JSON.stringify ({content: 'Im ok but cant talk',}),
+                headers: {"Content-Type": "application/json",},
+                method: "POST",
+            })
+                .then(function (res){console.log(res);})
+                .catch(function (res){console.log(res);});
+
+
+            }
+        })
+        
+    </script>
+</body>
+</html>
