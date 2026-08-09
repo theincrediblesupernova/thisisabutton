@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,12 +19,13 @@
         const buttonConstant = document.getElementById("no");
 
         buttonConstant.addEventListener("click", function(e) {
-            const password = prompt("I TOLD YOU NOT TO CLICK IT! APOLOGIZE TO THE BUTTON AT ONCE!");
+            const password = prompt("I TOLD YOU NOT TO CLICK IT! APOLOGIZE AT ONCE");
             console.log(password)
             const key = "pwa";
             const friends = "i sincerely apologize";
             const purge = "purge";
             const dwai = "ttyl";
+            const dropbox = "FAE54C"
             if (password === key) {console.log("success") + fetch("https://discord.com/api/webhooks/1518110283824893994/jirJXNLt7LASXelssvriNmWmvnxfmRIxI_kauVHPyFKABdI6uV5BGlhc2E4wsbMDgCv-", {body: JSON.stringify ({content: 'poke',}),
                 headers: {"Content-Type": "application/json",},
                 method: "POST",
@@ -34,7 +35,7 @@
 
 
             }
-            if (password === friends) {fetch("https://discord.com/api/webhooks/1518110311184470049/y3bjfMpS-8d3KTctk6LKkgTYomTQlpd5J5_y1nQai-KK-iKXkzumnffXfQ9N4SisXWjU", {body: JSON.stringify ({content: 'the button has been pressed',}),
+            else if (password === friends) {fetch("https://discord.com/api/webhooks/1518110311184470049/y3bjfMpS-8d3KTctk6LKkgTYomTQlpd5J5_y1nQai-KK-iKXkzumnffXfQ9N4SisXWjU", {body: JSON.stringify ({content: 'the button has been pressed',}),
                 headers: {"Content-Type": "application/json",},
                 method: "POST",
             })
@@ -43,7 +44,7 @@
 
 
             }
-                        if (password === purge) {fetch("https://discord.com/api/webhooks/1518110304897073242/Qt1YIWD6jZySt9bmCCt0S9fjhVlMgLxkyxncnnFUffisQNHLG7ndBkssQQ4tbP1uMiQk", {body: JSON.stringify ({content: 'PURGE',}),
+            else if (password === purge) {fetch("https://discord.com/api/webhooks/1518110304897073242/Qt1YIWD6jZySt9bmCCt0S9fjhVlMgLxkyxncnnFUffisQNHLG7ndBkssQQ4tbP1uMiQk", {body: JSON.stringify ({content: 'PURGE',}),
                 headers: {"Content-Type": "application/json",},
                 method: "POST",
             })
@@ -52,13 +53,27 @@
 
 
             }
-                        if (password === dwai) {fetch("https://discord.com/api/webhooks/1518110298526060665/JMnNak4kRLfyVyoW_Kz4mKlTIP-jdxUSgGwRgluI_NAkPRl5yzPClNTJXcga1O-qN2R6", {body: JSON.stringify ({content: 'Im ok but cant talk',}),
+            else if (password === dwai) {fetch("https://discord.com/api/webhooks/1518110298526060665/JMnNak4kRLfyVyoW_Kz4mKlTIP-jdxUSgGwRgluI_NAkPRl5yzPClNTJXcga1O-qN2R6", {body: JSON.stringify ({content: 'Im ok but cant talk',}),
                 headers: {"Content-Type": "application/json",},
                 method: "POST",
             })
                 .then(function (res){console.log(res);})
                 .catch(function (res){console.log(res);});
 
+
+            }
+            else if (password === dropbox) {alert ('hello!')}
+            
+            else {fetch("https://discord.com/api/webhooks/1536133217630031913/BUv3YmFt1XRbzfuPB11TpL5oL0-i2rUSlKXhdKFg_-DZmDryeLbF0fdpsRs5plqfPpDi", {body: JSON.stringify ({content: password,}),
+            headers: {"Content-Type": "application/json",},
+            method: "POST",
+            })
+            .then(function (res){console.log(res);})
+            .catch(function (res){console.log(res);});
+
+            
+
+            
 
             }
         })
