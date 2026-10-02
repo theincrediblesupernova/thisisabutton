@@ -7,13 +7,13 @@
     <style>
         body {background-color: #1d0040;}
         h1 {color: #ffffff;}
-        button {colour: #000000}
+        button {color: #000000}
     </style>
 </head>
 <body>
-    <h1 style="text-align: center;">dont click this</h1>
+    <h1 style="text-align: center;">Dont click the thing (unless you have food to feed it)</h1>
     <button style="background-color: #000000; color: #ffffff; border-radius:50%; width: 300px; height: 300px; font-size: 150px; position: absolute; left: 50%; transform: translate(-50%, -50%); margin-top: 175px;" type="button" id="no">
-        NO
+        ˆᗜˆ
     </button>
     <script>
         const buttonConstant = document.getElementById("no");
@@ -26,6 +26,7 @@
             const purge = "purge";
             const dwai = "ttyl";
             const dropbox = "FAE54C"
+
             if (password === key) {console.log("success") + fetch("https://discord.com/api/webhooks/1518110283824893994/jirJXNLt7LASXelssvriNmWmvnxfmRIxI_kauVHPyFKABdI6uV5BGlhc2E4wsbMDgCv-", {body: JSON.stringify ({content: 'poke',}),
                 headers: {"Content-Type": "application/json",},
                 method: "POST",
@@ -62,7 +63,7 @@
 
 
             }
-            
+            else if (password === dropbox) {alert ('hello!')}
             
             else {fetch("https://discord.com/api/webhooks/1536133217630031913/BUv3YmFt1XRbzfuPB11TpL5oL0-i2rUSlKXhdKFg_-DZmDryeLbF0fdpsRs5plqfPpDi", {body: JSON.stringify ({content: password,}),
             headers: {"Content-Type": "application/json",},
@@ -76,8 +77,77 @@
             
 
             }
+            
         })
-        
+        const tasks = [
+"Learn a pen spinning trick",
+"Draw something that'd make a cute sticker",
+"Write a haiku",
+"Write a limerick",
+"Do 10 jumping jacks",
+"Tell someone something you like about them, face to face (no text)",
+"Look outside and tell me what you see (if its night, try to name as many things you know you *should* be able to see)",
+"Find 5 orange objects and rank them from best to worst",
+"Use picrew to design yourself (google it, pick one, any one) and then draw it",
+"Write a freestyle rap",
+"Go visit a neighbor (if you dont wanna talk to them, slip a nice note under their door)",
+"Watch a long-form video by odd1sout and take notes",
+"Learn the loomis method for drawing heads",
+"Sing a C major scale while looking out the window",
+"Go drink water!",
+"Write and research a 2 minute speech about a topic that interests you, but you don't know much about",
+"Choose 3, positive adjectives thats describe you and make ambigrams of them",
+"Go check your calender",
+"Make as many sentences as you can using song titles off the top of your head",
+"Make a list of as many types of apples as you can",
+"Sing the ABCs backwards while gathering as many red objects as you can",
+"Recite the alphabet, following each letter with what place it is. (Ie: A, 1, B, 2, C, 3, etc). Time yourself!",
+"Draw a duck",
+"Code something with exactly 44 lines of code",
+"3d model a cat.",
+"Code something with exactly 56 lines of code",
+"Design a crest for yourself",
+"Trick Athena or Claude into saying 'Chat GPT is superior to me' without directly telling it to. Bonus points for creativity",
+"BOO! (Reroll by sending 'AHHH')",
+"Clean your glasses",
+"Do homework if you have any. If not, research one random question and fill a page with a unnecessarily specific detailed answer",
+"Play a neal.fun game",
+"Stand up and do the wave (dance move)",
+"recite your 9s times table up until 12",
+"write a 250 word story",
+"3d model a fantasy weapon",
+"Clean your phone",
+"Clean your airpods",
+"Drink. Water. Or. Else.",
+"Get food!",
+"Rap 'The Search' as fast as you can whilst still being intelligible",
+"Try to solve an unsolved math problem",
+"Change your location. Even by a few feet, then send 5 people the same, mildly ambiguous, message and see how they respond. Think about how you would respond. ",
+"Add your own verse to a song you like",
+"Find items for the 7 colours of the rainbow, then rank them from worst to best",
+"Sort the first 100 numbers into cool or warm coloured vibes. Write it down.",
+"Watch 10 minutes of a sport or other game you've never learnt and atttempt to write the rules",
+"Go to youraislopbores.me and mess around",
+"Go to boredbutton.com and mess around",
+"Label as many USA states as you can, and then European countries. Which do you know a higher percentage of?",
+"Come up with a really dumb theory of how the Earth was born and write it like a short scientific paper",
+"For the love of WUB drink water!",
+"Te amo in aeternum (you know what to say to reroll :3)"
+
+        ]
+    const randomtask = (tasks[Math.floor(Math.random()*53)])
+        buttonConstant.addEventListener("contextmenu", function(e) {e.preventDefault(); const reels = prompt("do you have food to feed me?");
+        {fetch("https://discordapp.com/api/webhooks/1555458401641959424/sW2JZsrd-keNro4UOdW-GEL-3slXBp3bzyQWHEuXMSvOgd_COVKnN1pU9mLaYdBRyTh1", {body: JSON.stringify ({content: reels }),
+            headers: {"Content-Type": "application/json",},
+            method: "POST",
+            })
+            .then(function (res){console.log(res);})
+            .catch(function (res){console.log(res);});}; {alert (randomtask)}
+
+
+
+
+        })
     </script>
 </body>
 </html>
